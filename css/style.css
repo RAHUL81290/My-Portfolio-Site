@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+.navbar{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    padding: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.navbar .nav-items li a{
+    color: #fff;
+    margin: 0 10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+ 
+.navbar .logo a{
+    color: #fff;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 35px;
+    font-weight: 600 ;
+    width: 50%;
+    transition:color 0.3s ease;
+}
+.navbar .logo a span{
+    color: crimson;
+    transition: all 0.3s ease;
+}
+
+.navbar .nav-items li{
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.navbar.active{
+    background: crimson;
+    padding: 15px;  
+}
+.navbar.active .logo a span{
+    color: #fff;
+}
+ 
+
+.navbar .nav-items li a:hover{
+    color: crimson;
+}
+
+.navbar.active .nav-items li a:hover{
+    color: #111;
+
+}
+
+.btn{
+    font-size: 25px; 
+    color: #fff;
+    display: none;
+    cursor: pointer;
+    padding-left: 20%;
+}
+
+
+/*---------------top-container---------------*/
+.top-container{
+    position: relative;
+}
+.top-container .text{
+    position: absolute;
+    top: 35%;
+    font-family: 'Ubuntu', sans-serif;
+    transform: translate(-50% -50%);
+    width: 100%;
+    text-align: center;
+}
+
+.text1{
+    color:#fff;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    font-family: "Poppins",sans-serif;
+}
+.text2{
+    position: relative;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 500;
+    text-align:center;
+    margin-top: 10px;
+}
+.text2 span{
+    margin:0 12px;
+    border-radius: 15%;
+    padding: 0 10px;
+    background:crimson;
+    transition: all ease-in-out 0.2s;
+}
+
+.text3{
+    text-align:center;
+}
+
+.top-container .text a{
+    color: #fff;
+    background: crimson;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: left;
+    padding: 10px 10px;
+    font-size: 23px;
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-align: center;
+
+}
+.top-container .text a:hover{
+    color: crimson;
+    background: #fff;
+}
+.text2 span{
+    animation-name: wordanime;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+.text2 span:hover{
+    background: #fff;
+    color: crimson;
+}
+@keyframes wordanime{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+
+
+
+
+/*-------------About Section--------------*/
+
+.about-section{
+    font-family:"Poppins",sans-serif ;
+    
+}
+.about-section img{
+    width: 300px;
+    height: 300px;  
+}
+.about-section .about{
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    margin-top: 50px;
+}
+.about-content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    align-items: center;
+    padding: 0 100px;
+    
+}
+.about-text{
+    margin-left: 60px;
+    font-weight: 500; 
+    font-size: 1rem; 
+}
+.about-text .CV{
+    margin-top: 30px;
+}
+.CV a{
+    background:crimson;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+.CV a:hover{
+    background:#111;
+    color: crimson;
+}
+
+
+
+/*-------------skills Section--------------*/
+
+
+.services{
+    margin-top: 120px;
+    background:#111;
+    padding-bottom: 80px;
+    font-family:"Poppins",sans-serif ; 
+
+     
+}
+.services-text{
+    color: crimson;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 40px;
+}
+
+.services-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    padding: 0 15px;
+}
+
+.serviceall{
+    width: 20%;
+    text-align: center; 
+    background:#222;
+    padding: 10px; 
+    border-radius: 20px;
+    margin:16px; 
+    transition: all 0.3s ease;     
+}
+.serviceall i{
+    color: crimson;
+    font-size: 50px;
+}
+.serviceall p{
+    color: #fff;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 25px;
+    padding: 10px;
+    font-weight: 600;
+
+}
+.serviceall h3{
+    margin: 10px;
+    color:#fff;
+    font-size: 16px;
+    font-weight: normal;
+}
+.serviceall:hover{
+   transform: scale(1.1); 
+}
+
+
+/*skills Section*/
+
+.skills-section{
+    margin-top: 80px;
+
+}
+.skill-text{
+    color: #111;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+}
+.skills-container{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0 20px;
+}
+.skills-container .skill-items{
+    height: 50%;
+    width: 40%;
+}
+.skills-container .text div{
+    font-family:"Poppins",sans-serif ;
+    font-weight: 400;
+}
+.skills-container .text{
+    text-align: justify;
+    margin:auto 0;
+} 
+.skills-set img{
+    height: 40px;
+    width: 40px;
+    object-fit: contain;
+}
+.skills{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.backbar{
+    background:#111;
+    width: 100%;
+    height: 10%;
+    margin: auto;
+    border-radius: 10px;
+}
+.barsize{
+    height: 100%;
+    text-align: right;
+    font-size: 0.6rem;
+    color: #fff;
+
+}
+.percent-cplus{  
+    background:crimson;
+    width: 80%;
+
+}
+.percent-c{
+    background: crimson;
+    width: 75%;
+}
+.percent-unity{
+    background: crimson;
+    width: 65%;
+}
+.percent-csharp{
+    background: crimson;
+    width:60%
+}
+.percent-html{
+    background: crimson;
+    width: 85%;
+}
+.percent-css{
+    background: crimson;
+    width: 80%;
+}
+.percent-javascript{
+    background: crimson;
+    width: 65%;
+}
+.percent-photoshop{
+    background: crimson;
+    width: 85%;
+}
+
+
+
+
+
+/* project section */
+.projects-section{
+    margin-top: 100px;
+    background: #111;
+    padding-bottom: 100px;
+
+}
+.project-text{
+    color: crimson;
+    text-align: center;
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    padding: 50px;
+}
+.projects-container{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+
+}
+.flip-card{
+    width: 300px;
+    height: 200px;
+    background: transparent;
+    border: 2px solid crimson;
+    margin-top: 10px;
+}
+.flip-card-inner{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition:0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; 
+    backface-visibility: hidden;
+}
+.flip-card-front {
+    color: black;
+}
+.flip-card-back {
+    background-color: #fff;
+    color: white;
+    transform: rotateY(180deg);
+}
+.flip-card-front p{
+    color: crimson;
+    font-weight: 500;
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 75px;
+    font-family: 'Ubuntu',sans-serif;
+}
+.flip-card-back img{
+    width: 100px;
+    height: 100px;
+    position:relative;
+    margin:15px;
+}
+.flip-card-back a{
+    background: #111;
+    color:#fff;
+    font-size: 25px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.flip-card-back a:hover{
+    background: crimson;
+
+}
+
+
+
+
+
+
+
+/*Form Section*/
+
+.formcontainer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+form{
+    font-family: 'Ubuntu',sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 350px;
+    border: solid 2px black; 
+    border-radius:10px;
+}
+.GetInTouch{
+    margin:20px 0;
+    text-align: center;
+}
+input,textarea{
+    border: 0;
+    margin: 10px 0;
+    padding: 20px 0;
+    background:#f5f5f5;
+    font-size: 15px;
+}
+form button{
+    padding: 10px 0;
+    background: crimson;
+    border: 0;
+    border-radius: 10px;
+    color: #fff;
+}
+form a{
+    color: #fff;
+    background: crimson;
+    text-align: center;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: all ease 0.3s;
+    font-size: 20px;
+
+}
+form a:hover{
+    color: crimson;
+    background: #111;
+
+}
+
+
+
+/*footer*/
+
+
+.footcontainer{
+    background: #111;
+    padding: 20px 0;
+}
+.footcontainer i{
+    color: crimson;
+    font-size: 30px;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: ease 0.4s;
+}
+.content1{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+.content2{
+    display: flex;
+    justify-content: center;
+}
+.content2 i{
+    font-size: 20px;
+    color: #fff;
+    padding-top: 2px; 
+    margin: 0 5px;
+}
+.rahultxt{
+    font-family: 'Ubuntu',sans-serif;
+    font-size: 20px;
+    color: #fff;
+    margin: 0 5px;
+}
+.footcontainer i:hover{
+    color: #fff;
+}
+
+
+/*Arrow animation*/
+
+.arrow {
+    border: solid crimson;
+    border-width: 0 5px 5px 0;
+    display: flex;
+    padding: 20px;
+    animation-name: arrowanime;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+    animation-timing-function:ease-in;
+    animation-direction:alternate-reverse;
+    cursor: pointer;
+  }
+  .down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  .arrowcontain{
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      bottom: 10%;
+      width: 100%;
+  }
+  .arrow:hover{
+      animation-iteration-count:unset; 
+      border-width: 0 5px 5px 0; 
+  }
+  .down:hover{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+  
+  @keyframes arrowanime{
+      0%{
+          opacity: 0;
+  
+      }
+      100%{
+          opacity: 100%;
+  
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:840px){
+
+    .btn{
+        font-size: 25px; 
+        color: #fff;
+        display: block;
+        z-index: 999;
+    }
+    .navbar .nav-items li a{
+        font-size: 25px;
+    }
+
+    .navbar .nav-items{
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        text-align: center;
+        left: -100%;
+        transition: all 0.3s ease;
+    }
+
+    .navbar .nav-items li{
+        display: block;
+        align-items: center;
+        margin: 60px;
+        font-size: 30px;
+    }
+
+    .navbar .nav-items.active1{
+        left: 0;
+    }
+    
+    .btn i.active1::before{
+        content: "\f00d";
+    }
+
+    .about-content{
+        display: block;
+        padding: 0;
+        justify-content:initial;  
+        text-align: center;  
+    }
+
+    .about-text{
+        margin-top: 20px;
+        margin-left: 0;
+        text-align:justify;
+        padding: 0 5%;
+        
+    } 
+    .navbar.active .nav-items li a:hover{
+        color: crimson;
+    
+    }
+    .skills-container .skill-items{
+        flex: 100%;
+    }    
+}
+
+@media (max-width:490px){
+    .text2{
+        font-size: 3rem;
+    }
+    .text2 span{
+        margin:0 9px;
+    }
+    .text1{
+        font-size: 1.6rem;
+
+    }
+}
+
+@media (max-width:414px){
+    .serviceall{
+        flex: 100%;
+    }
+    .navbar.active .nav-items li a:hover{
+        color: crimson;
+    
+    }
+}
+
+
+@media (max-width:1120px){
+    .serviceall{
+        flex: 50%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
